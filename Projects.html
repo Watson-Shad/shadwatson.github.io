@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CS 261 PROJECTS</title>
+        <link rel = "stylesheet" href="project.css">
+       <script type="text/javascript" src="project1.js"></script>
+    </head>
+    <body>
+        <h2>CS 261 PROJECTS</h2>
+        <div class = "row">
+          <div class="containerLeft">
+              <h3>Variables</h3>
+              <p>Click to fill the variables </p>
+              <p id ="intVar"> intVar </p>
+              <p id ="strVar"> strVar </p>
+              <p id ="fltVar"> fltVar </p>
+              <button onclick = "random()">Fill Variables </button>
+              <button onclick = "resetVariables()">Reset Variables</button>
+          </div>
+            <div class="containerRight">
+              <h3>Loops</h3>
+              <p>Click to run the loop </p>
+              <p id = "loop">Run me!</p>
+              <button onclick = "loop()">Run Loop </button>
+                <button onclick = "resetLoop()"> Reset Loop</button>
+            </div>
+            <div class = "containerMiddle">
+            <h4>Conditionals</h4>
+                <p>Type in 2 numbers to see which is greater!</p>
+                Number 1:<br>
+                <input type = "number" id = "number1"><br>
+                Number 2<br>
+                <input type = "number" id = "number2">
+                
+                <p id = "result">Result will show here</p>
+                <button onclick = "conditional()">Compare!</button>
+                <button onclick = "resetConditional()">Reset!</button>
+            </div>
+            
+         </div>
+     
+        
+    </body>
+   
+</html>
