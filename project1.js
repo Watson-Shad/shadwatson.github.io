@@ -81,7 +81,7 @@ function favoriteStuff()
     favorite["color"] = document.getElementById("color").value;
     favorite["sport"] = document.getElementById("sport").value;
     
-    var reply = "It is great to meet you! Here is what I have learned about you! Your favorite food is "  + favorite["food"] + ". Your favorite color is " + favorite["color"] + ". And your favorite sport to play is " + favorite["sport"] + "."
+    var reply = "It is great to meet you! Here is what I have learned about you!! Your favorite food is "  + favorite["food"] + ". Your favorite color is " + favorite["color"] + ". And your favorite sport to play is " + favorite["sport"] + "."
     
     document.getElementById("know").innerHTML = reply;
     
