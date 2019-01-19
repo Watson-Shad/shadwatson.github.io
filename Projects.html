@@ -10,7 +10,7 @@
         <h2>CS 261 PROJECTS</h2>
         <div class = "row">
           <div class="containerLeft">
-              <h3>Variables</h3>
+              <h3>Variables Example</h3>
               <p>Click to fill the variables </p>
               <p id ="intVar"> intVar </p>
               <p id ="strVar"> strVar </p>
@@ -18,15 +18,15 @@
               <button onclick = "random()">Fill Variables </button>
               <button onclick = "resetVariables()">Reset Variables</button>
           </div>
-            <div class="containerRight">
-              <h3>Loops</h3>
+            <div class="containerBottom">
+              <h3>Loops + Array Example</h3>
               <p>Click to run the loop </p>
               <p id = "loop">Run me!</p>
               <button onclick = "loop()">Run Loop </button>
                 <button onclick = "resetLoop()"> Reset Loop</button>
             </div>
             <div class = "containerMiddle">
-            <h4>Conditionals</h4>
+            <h4>Conditionals Example</h4>
                 <p>Type in 2 numbers to see which is greater!</p>
                 Number 1:<br>
                 <input type = "number" id = "number1"><br>
@@ -37,7 +37,37 @@
                 <button onclick = "conditional()">Compare!</button>
                 <button onclick = "resetConditional()">Reset!</button>
             </div>
-            
+            <div class = "containerMiddle2">
+                <h5>Perameter Example</h5>
+                <h6>MADLIB GAME!</h6>
+                <p>Please input a noun, verb and an adjective</p>
+                Noun: <br>
+                <input type = "text" id = "noun" value = "Some Noun..."> <br>
+                Verb: <br>
+                <input type = "text" id = "verb" value = "Some Verb..."> <br>
+                Adjective: <br>
+                <input type = "text" id = "adjective" value = "Some Adjective..." <br>
+                <p id = "story">Story will appear here.</p>
+                <button onclick = "playMadLib()">Play!</button>
+                <button onclick = "resetGame()">Reset</button>
+                
+            </div>
+            <div class = "containerRight">
+                <h7>Associative Arrays Example</h7>
+                <p>Please fill in the text box's with your information!</p><br>
+                Favorite Food: <br>
+                <input type = "text" id = "food"><br>
+                Favorite Color: <br>
+                <input type = "text" id = "color"><br>
+                Favorite Sport: <br>
+                <input type="text" id = "sport"><br>
+                <p id = "result"></p>
+                <br>
+                <button onclick = "favoriteStuff()">Submit</button>
+                <button onclick = "resetFavorite()">Submit another!</button>
+            </div>
+                
+                
          </div>
      
         

@@ -37,7 +37,7 @@ function conditional()
     var input2 = document.getElementById("number2").value;
     if (input2 < input1){  
        document.getElementById("result").innerHTML = input1;
-    }
+       }
     else{
          document.getElementById("result").innerHTML = input2;
         }
@@ -50,3 +50,48 @@ function resetConditional()
     document.getElementById("number2").value = 0;
 }
 
+var noun;
+var verb;
+var adjective;
+
+
+
+function playMadLib(noun, verb, adjective) 
+{
+    noun = document.getElementById("noun").value;
+    verb = document.getElementById("verb").value;
+    adjective = document.getElementById("adjective").value;
+    
+    var madLib = "Once upon a time, in a galaxy far far away.... There was a " + noun + " sitting in the tree playing " + verb + ". While there was a big " + adjective + " bear waiting for him at the base of the tree. The End."
+    
+    document.getElementById("story").innerHTML = madLib;   
+}
+function resetGame()
+{
+    document.getElementById("noun").value= "";
+    document.getElementById("verb").value = "";
+    document.getElementById("adjective").value = "";
+    
+    document.getElementById("story").innerHTML = "Story will appear here.";
+}
+function favoriteStuff()
+{
+    var favorite = new Array();
+    document.getElementById("food").value = favorite["food"];
+    document.getElementById("color").value = favorite["color"];
+    document.getElementById("sport").value = favorite["sport"];
+    
+    var reply = "It is great to meet you! Here is what I have learned about you! Your favorite food is "  + favorite["food"] + ". Your favorite color is " + favorite["color"] + ". And your favorite sport to play is " + favorite["sport"] + "."
+    
+    document.getElementById("result").innerHTML = reply;
+    
+    
+}
+function resetFavorite()
+{
+    document.getElementById("food").innerHTML = "";
+    document.getElementById("color").innerHTML = "";
+    document.getElementById("sport").innerHTML = "";
+    
+    document.getElementById("result").innerHTML = "";
+}
