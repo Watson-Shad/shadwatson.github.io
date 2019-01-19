@@ -77,13 +77,13 @@ function resetGame()
 function favoriteStuff()
 {
     var favorite = new Array();
-    document.getElementById("food").value = favorite["food"];
-    document.getElementById("color").value = favorite["color"];
-    document.getElementById("sport").value = favorite["sport"];
+    favorite["food"] = document.getElementById("food").value;
+    favorite["color"] = document.getElementById("color").value;
+    favorite["sport"] = document.getElementById("sport").value;
     
     var reply = "It is great to meet you! Here is what I have learned about you! Your favorite food is "  + favorite["food"] + ". Your favorite color is " + favorite["color"] + ". And your favorite sport to play is " + favorite["sport"] + "."
     
-    document.getElementById("result").innerHTML = reply;
+    document.getElementById("know").innerHTML = reply;
     
     
 }
@@ -93,5 +93,5 @@ function resetFavorite()
     document.getElementById("color").innerHTML = "";
     document.getElementById("sport").innerHTML = "";
     
-    document.getElementById("result").innerHTML = "";
+    document.getElementById("know").innerHTML = "";
 }
